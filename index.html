@@ -1,82 +1,255 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<meta charset="UTF-8">
-<title>Binghamton University Women's Rugby Football Club</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+	<title>Binghamton University Women's Rugby Football Club | Home </title>
+	<!--fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>		
+	<!--//fonts-->		
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="rugby Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<!-- js -->
+		<script src="js/jquery.min.js"></script>
+	<!-- js -->
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div>
-                <a href="index.html"><img id="navlogo" src="images/navlogo.png"</a>
-            </div>
-                    <ul>
-                        <div class="dropdown">
-                            <span><li><a class="navlinks" href="shedevils.html"><b>SHE-DEVILS</b></a></li></span>
-                            <div class="dropdown-content">
-                                <p>Our Story</p>
-                                <p>Meet the She-Devils</p>
-                                <p>Interested in Joining?</p>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <span><li><a class="navlinks" href="schedule.html"><b>SCHEDULE & RESULTS</b></a></li></span>
-                            <div class="dropdown-content">
-                                <p>Schedule</p>
-                                <p>Match Reports</p>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <span><li><a class="navlinks" href="fundraising.html"><b>FUNDRAISING</b></a></li></span>
-                            <div class="dropdown-content">
-                                <p>Fundraising Events</p>
-                                <p>Donate Now!</p>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <span><li><a class="navlinks" href="alumni.html">ALUMNI</a></li></span>
-                            <div class="dropdown-content">
-                                <p>Alumni Advisory Board</p>
-                                <p>Alumni Networking</p>
-                                <p>Alumni Charter</p>
-                            </div>
-                        </div>
-                        <li><a class="navlinks" href="photos.html">PHOTO ARCHIVES</a></li>
-                        <li><a class="navlinks" href="contact.html">CONTACT</a></li>
-                    </ul>
-       </nav>
-    </header>
-<main>
-	<div class="image-block-wrapper">
-		<a id="banner" href="contact.html"><img src="images/banner.jpg"></a>
-	</div>
-    <table>
-    	<tr>
-        	<td><a href="alumni.html"><img class="indexads" src="images/contact1.jpg"></a></td>
-            <td><a href="shedevils.html"><img class="indexads" src="images/contact2.jpg"></a></td>
-        	<td><a href="contact.html"><img class="indexads" src="images/contact3.jpg"></a></td>
-        </tr>
-   	</table>
-</main>
-<footer>
-    <div class="box1">
-            <p>Follow us on social media:</p>
-            <section>
-                <a href="https://www.facebook.com/Binghamton-University-Womens-Rugby-Club-313935831988665/?fref=ts"><img src="images/facebook.png"></a>
-                <img src="images/twitter.png">
-                <a href="https://www.instagram.com/bingwrfc/"><img src="images/instagram.png"></a>
-            </section>          
-    </div>
-    <div class="inlineblock">
-        <a href="index.html"><img id="logo" src="images/logo.png"></a>
-    </div>
-    <div class="box2">
-        <p>Email us for more information:</p>
-            <a href="bingwomensrugby@gmail.com">bingwomensrugby@gmail.com</a>
-    </div>
-</footer>
+<!-- header -->
+<div class="header">
+	 <div class="container">
+		 <div class="logo">
+			   <h1><a href="index.html">Binghamton Women's Rugby</a></h1>
+		 </div>	
+		 <div class="top-menu">
+			 <span class="menu"></span>
+			  <ul>
+				 <li class="active"><a href="index.html">HOME</a></li>
+				 <li><a href="about.html">ABOUT US</a></li>
+				 <li><a href="gallery.html">GALLERY</a></li>
+				 <li><a href="fundraising.html">FUNDRAISING</a></li>
+				 <li><a href="event.html">NEWS & EVENTS</a></li>
+				 <li><a href="101.html">RUGBY 101</a></li>
+				 <li><a href="alumni.html">ALUMNI</a></li>
+				 <li><a href="contact.html">CONTACT</a></li>
+			 </ul>			 
+		 </div>			
+		 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->	  	
+
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!-- //header -->
+<!-- banner -->
+<div class="strip">
+	 <div class="container">
+	 <div class="search">
+		    <form>
+		    	<input type="text" value="" placeholder="Search...">
+				<input type="submit" value="">
+			</form>
+     </div>     
+	 <div class="social">			 
+			 <a href="https://www.facebook.com/Binghamton-University-Womens-Rugby-Club-313935831988665/?fref=ts"><i class="facebook"></i></a>
+			 <a href="https://www.instagram.com/bingwrfc/"><i class="twitter"></i></a>
+	 </div>
+		<div class="clearfix"></div>
+		</div>
+</div>
+<!-- banner -->
+<div class="banner">
+		<script src="js/responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	speed: 300,
+        manualControls: '#slider3-pager',
+      });
+    });
+  </script>
+
+ <div class="slider">
+	  <div class="callbacks_container">
+	     <ul class="rslides" id="slider">
+	         <li>
+				  <img src="images/bnr1.jpg" alt="">
+				  <div class="banner-info">
+				  <h3>Strike Hard. Strike First. No Mercy.</h3>
+				  <h3>She-Devils</h3>
+				  </div>
+	         </li>
+	         <li>
+				 <img src="images/bnr3.jpg" alt="">
+			 </li>
+	         <li>
+				  <img src="images/bnr4.jpg" alt="">
+	         </li>
+	         <li>
+	             <img src="images/bnr2.jpg" alt="">
+	         </li>
+	      </ul>
+	  </div>
+  </div>
+<!---->
+				
+	 <!---start-content----->
+	 <div class="banner-bottom-grids">
+		 <div class="container">
+			 <div class="col-md-6 banner-text-info clr1">
+				 <i class="icon1"></i>
+				 <div class="bnr-text">				 
+					 <h3>RECORDS</h3>
+					 <p>Did you know the team is celebrating its 25th anniversary?</p>
+					 <p>Check out our records to see how we stand against our competitors.</p>
+				 </div>
+			 </div>
+			 <div class="col-md-6 banner-text-info clr2">	
+				 <i class="icon2"></i>
+				 <div class="bnr-text">
+					 <h3>CAMPUS INVOLVEMENT</h3>
+					 <p>The team is involved on and off the field. Philanthropy is an integral part of these ruggers lives. See how they make a difference in the Binghamton community.</p>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+			 
+			 <div class="col-md-6 banner-text-info clr3 btm">	
+				 <i class="icon3"></i>
+				 <div class="bnr-text">
+					 <h3>INTERESTED IN JOINING?</h3>
+					 <p>No experience necessary.</p>
+					 <p>There is a position for everyone at every level.</p> 
+					 <p>Come give rugby a try!</p>
+				 </div>
+			 </div>
+			 <div class="col-md-6 banner-text-info clr4 btm">	
+				 <i class="icon4"></i>
+				 <div class="bnr-text">
+					 <h3>TRI-STATE CONFERENCE</h3>
+					 <p>•••</p>
+					 <p>Click for a link to the Tri-State Conference.</p>
+					 <p>•••</p>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!-- //banner -->
+
+<!-- content -->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-4 content-grid1">
+				 <img src="images/siena2.jpg" alt=""/>
+				 <h3>Siena 7's</h3>
+				 <p>Content</p>
+				 <a href="#">Read More..</a>
+			 </div>
+			 <div class="col-md-4 content-grid1">
+				 <img src="images/boe.jpg" alt=""/>
+				 <h3>Beast of the East</h3>
+				 <p>Content</p>
+				 <a href="#">Read More..</a>
+			 </div>
+			 <div class="col-md-4 content-grid1">
+				 <img src="images/bnr1.jpg" alt=""/>
+				 <h3>Conference 7's</h3>
+				 <p>Content</p>
+				 <a href="#">Read More..</a>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!--- //content--->
+<!-- content-bottom -->
+<div class="content-info">
+	 <div class="container">
+		 <div class="content-bottom-grids">
+			 <div class="col-md-4 popular">	
+					 <h3>Interested in Joining?</h3>
+					 <h4>The Binghamton University Women’s Rugby Club is always seeking new players. No previous experience is necessary.</h4>
+					 <ul>
+						<li>Athletes of all sizes and backgrounds are encouraged to join. Successful rugby players may be large or small; attributes of speed, quickness, intelligence, and strength are always desired.</li>
+						<li>If you seek a highly competitive athletic outlet and/or an athletically oriented social organization, please consider joining us at practice at any time during the year.</li>
+						<li>The club generally fields two teams at all games in the Fall and enteres two sides in most Spring tournaments so every player will have the opportunity to play each week regardless of skill level. </li>
+						<li>There is an elite team that plays 'A-side' and everyone who attends practice that is not on the elite team is guaranteed to play in 'B-side' games when they take place.</li>
+						<li>The ONLY requirement in order to play rugby is that you are a full-time student at Binghamton University.</li>
+					</ul>
+			 </div>
+			 <div class="col-md-4 welcome-pic">
+				 <h3>PLAYER OF THE MONTH</h3>
+				 <h4>Name</h4>
+				 <img src="images/cnt.ab.jpg" alt=""/>
+				 <p>This rugger has...</p>
+				 <a href="#">Read More..</a>
+			</div>
+			<div class="col-md-4 coach">
+				 <h3>COACHING STAFF</h3>
+				 <div class="coch-grid chr">
+					 <div class="coach-pic">
+						 <img src="images/ch1.jpg" alt=""/>
+					 </div>
+					 <div class="coach-pic-info">
+						 <h4><a href="#">Micheal Callan</a></h4>
+						 <h5>Head Coach</h5>
+						 <p>Micheal began coaching the team in 2001, after a rugby career that began in Ireland. His dedication to the sport is clear through his development of youth rugby programs throughout the Southern Tier of New York.</p>
+					 </div>
+					 <div class="clearfix"></div>
+				 </div>
+				 <div class="coch-grid">
+					 <div class="coach-pic">
+						 <img src="images/ch3.jpg" alt=""/>
+					 </div>
+					 <div class="coach-pic-info">
+						 <h4><a href="#">Alana Gregory</a></h4>
+						 <h5>Assistant Coach</h5>
+						 <p>Starting in the Spring of 2016, Alana is new to the team. A former player on the Fallen Angels RFC, she brings a new perspective to the team.</p>
+					 </div>
+					 <div class="clearfix"></div>
+				 </div>
+			</div>
+			<div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!-- //content-bottom -->
+<!--footer-->
+<div class="footer">
+	 <div class="container">
+		 <div class="copywrite">
+			 <p>© 2016 All Rights Reserved Design by <a>Jennifer Bochicchio</a> </p>
+		 </div>
+		 <div class="footer-menu">
+			 <ul>
+				 <li class="active"><a href="index.html">HOME</a></li>
+				 <li><a href="about.html">ABOUT US</a></li>
+				 <li><a href="gallery.html">GALLERY</a></li>
+				 <li><a href="fundraising.html">FUNDRAISING</a></li>
+				 <li><a href="event.html">NEWS & EVENTS</a></li>
+				 <li><a href="101.html">RUGBY 101</a></li>
+				 <li><a href="alumni.html">ALUMNI</a></li>
+				 <li><a href="contact.html">CONTACT</a></li>
+			 </ul>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!-- //footer -->
 </body>
 </html>
